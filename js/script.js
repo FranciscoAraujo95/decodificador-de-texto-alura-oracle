@@ -7,10 +7,15 @@ let saidaDadosCopiar = document.querySelector(".saida__dados__copiar");
 
 //Função pra criptografar o texto
 botaoCodificar.addEventListener("click", () => {
+  //Armazena o input do usuario na variavel textoInformado
   let textoInformado = inputDoUsuario.value;
+  //Transforma o input do usuario em um array de caracteres, para que assim possamos passar por todo o array, verificando cada letra e a substituindo, caso seja a letra correta
   let arrayDoTextoInformado = textoInformado.split("");
+  //Condicional verificando se existe algo no input, caso sim, ele faz a codificação, caso não, mostra um alerta na tela.
+  //Se o input estiver vazio
   if (textoInformado == "") {
     alert("Digite algo a ser criptografado!!");
+    //Se não
   } else {
     for (let i = 0; i < arrayDoTextoInformado.length; i++) {
       if (arrayDoTextoInformado[i] == "a") {
@@ -26,15 +31,17 @@ botaoCodificar.addEventListener("click", () => {
       }
     }
   }
+  //Se tiver algo no input, faz tudo isso que tá embaixo, caso contrário, não faz nada
   if (textoInformado != "") {
     textoCodificado.innerHTML = arrayDoTextoInformado.join("");
-    recarregarCodificador();
+    limparSaidaDeDados();
     saidaDadosCopiar.classList.add("active");
     inputDoUsuario.value = "";
   }
 });
 
-function recarregarCodificador() {
+//Essa função retira parte dos elementos no container de saída de dados, pra ficar um output mais limpo
+function limparSaidaDeDados() {
   let saidaDadosImagem = document
     .querySelector(".saida__dados__imagem")
     .remove();
@@ -43,9 +50,12 @@ function recarregarCodificador() {
 
 //Função pra decodificar o texto
 botaoDecodificar.addEventListener("click", () => {
+  //A variavel textoInformado vai armazenar o input do usuario
   let textoInformado = inputDoUsuario.value;
+  //Se o input estiver vazio
   if (textoInformado == "") {
     alert("Nada a ser descriptografado!!");
+    //Se não, faz todo o procedimento de substituição
   } else {
     let textoDecodificado = textoInformado
       .replaceAll("ai", "a")
@@ -57,12 +67,14 @@ botaoDecodificar.addEventListener("click", () => {
   }
 });
 
+//Essa função utiliza-se da API do clipboard pra conseguir copiar o texto que vai aparecer codificado no output
 saidaDadosCopiar.addEventListener("click", () => {
   navigator.clipboard.writeText(textoCodificado.innerHTML);
+  //Mostra copied! no console
   console.log("copied!");
 });
 
-//RECARREGAR A PÁGINA
+//Recarrega a página
 let aluraLogoImagem = document
   .querySelector(".alura__logo__imagem")
   .addEventListener("click", () => {
@@ -73,12 +85,14 @@ let aluraLogoImagem = document
 let iconeTsunami = document
   .querySelector(".tsunami")
   .addEventListener("click", () => {
+    //remove os outros temas, pois o tema tsunami já é o padrão
     document.body.classList.remove("active__cafe");
     document.body.classList.remove("active__forest");
+    //Mesmo esquema da explicação da imagem abaixo
     let iconeAlura = document
       .querySelector(".alura__logo__imagem")
       .setAttribute("src", "./assets/alura-logo.svg");
-
+    //seta a imagem do personagem no tema azul novamente, pois ao mudar de tema e clicar pra remover o tema, a imagem continua sendo a do outro tema que foi adicionado antes, nesse caso, estou trabalhando com três imagens, uma para cada tema, modificando só as cores de destaque.
     let personagemComLupa = document
       .querySelector(".saida__dados__imagem")
       .setAttribute("src", "./assets/personagem-com-lupa.svg");
@@ -117,6 +131,7 @@ let iconeFloresta = document
     document.body.classList.add("active__forest");
   });
 
+//Função de codicicação, primeiro fiz ela da forma que está abaixo, depois adaptei aos botões do site
 // function codificarTexto(texto) {
 //   let mensagem = texto.split("");
 //   for (let i = 0; i < mensagem.length; i++) {
@@ -135,6 +150,7 @@ let iconeFloresta = document
 //   console.log(mensagem.join(""));
 // }
 
+//Função de decodicicação, primeiro fiz ela da forma que está abaixo, depois adaptei aos botões do site
 // function decodificarTexto(texto) {
 //   console.log(
 //     texto
