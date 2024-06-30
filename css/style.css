@@ -278,11 +278,11 @@ textarea {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
 
     
     .container {
-        width: 375px;
+        width: 400px;
         max-width: 100%;
         grid-template-columns: 1fr;
         padding: .8rem;
