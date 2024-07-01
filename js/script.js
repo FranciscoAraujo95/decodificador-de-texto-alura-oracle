@@ -101,7 +101,6 @@ function limparSaidaDeDados() {
 
 //Função pra decodificar o texto
 botaoDecodificar.addEventListener("click", () => {
-  limparSaidaDeDados();
   //A variavel textoInformado vai armazenar o input do usuario
   let textoInformado = inputDoUsuario.value;
   //Se o input estiver vazio
@@ -119,6 +118,7 @@ botaoDecodificar.addEventListener("click", () => {
     inputDoUsuario.value = "";
   }
   saidaDadosCopiar.innerHTML = "Copiar";
+  limparSaidaDeDados();
 });
 
 //Essa função utiliza-se da API do clipboard pra conseguir copiar o texto que vai aparecer codificado no output
