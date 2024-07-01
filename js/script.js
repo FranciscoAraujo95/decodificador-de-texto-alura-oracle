@@ -19,26 +19,63 @@ botaoCodificar.addEventListener("click", () => {
   } else {
     for (let i = 0; i < arrayDoTextoInformado.length; i++) {
       //Essa verificação leva em conta se a vogal é minúscula ou maiúscula
-      if (arrayDoTextoInformado[i] == "a" || arrayDoTextoInformado[i] == "A") {
+      if (
+        arrayDoTextoInformado[i] == "a" ||
+        arrayDoTextoInformado[i] == "A" ||
+        arrayDoTextoInformado[i] == "â" ||
+        arrayDoTextoInformado[i] == "Â" ||
+        arrayDoTextoInformado[i] == "ã" ||
+        arrayDoTextoInformado[i] == "Ã" ||
+        arrayDoTextoInformado[i] == "á" ||
+        arrayDoTextoInformado[i] == "Á" ||
+        arrayDoTextoInformado[i] == "à" ||
+        arrayDoTextoInformado[i] == "À"
+      ) {
         arrayDoTextoInformado[i] = "ai";
       } else if (
         arrayDoTextoInformado[i] == "e" ||
-        arrayDoTextoInformado[i] == "E"
+        arrayDoTextoInformado[i] == "E" ||
+        arrayDoTextoInformado[i] == "ê" ||
+        arrayDoTextoInformado[i] == "Ê" ||
+        arrayDoTextoInformado[i] == "é" ||
+        arrayDoTextoInformado[i] == "É" ||
+        arrayDoTextoInformado[i] == "è" ||
+        arrayDoTextoInformado[i] == "È"
       ) {
         arrayDoTextoInformado[i] = "enter";
       } else if (
         arrayDoTextoInformado[i] == "i" ||
-        arrayDoTextoInformado[i] == "I"
+        arrayDoTextoInformado[i] == "I" ||
+        arrayDoTextoInformado[i] == "î" ||
+        arrayDoTextoInformado[i] == "Î" ||
+        arrayDoTextoInformado[i] == "í" ||
+        arrayDoTextoInformado[i] == "Í" ||
+        arrayDoTextoInformado[i] == "ì" ||
+        arrayDoTextoInformado[i] == "Ì"
       ) {
         arrayDoTextoInformado[i] = "imes";
       } else if (
         arrayDoTextoInformado[i] == "o" ||
-        arrayDoTextoInformado[i] == "O"
+        arrayDoTextoInformado[i] == "O" ||
+        arrayDoTextoInformado[i] == "ô" ||
+        arrayDoTextoInformado[i] == "Ô" ||
+        arrayDoTextoInformado[i] == "õ" ||
+        arrayDoTextoInformado[i] == "Ô" ||
+        arrayDoTextoInformado[i] == "ó" ||
+        arrayDoTextoInformado[i] == "Ó" ||
+        arrayDoTextoInformado[i] == "ò" ||
+        arrayDoTextoInformado[i] == "Ò"
       ) {
         arrayDoTextoInformado[i] = "ober";
       } else if (
         arrayDoTextoInformado[i] == "u" ||
-        arrayDoTextoInformado[i] == "U"
+        arrayDoTextoInformado[i] == "U" ||
+        arrayDoTextoInformado[i] == "û" ||
+        arrayDoTextoInformado[i] == "Û" ||
+        arrayDoTextoInformado[i] == "ú" ||
+        arrayDoTextoInformado[i] == "Ú" ||
+        arrayDoTextoInformado[i] == "ù" ||
+        arrayDoTextoInformado[i] == "Ù"
       ) {
         arrayDoTextoInformado[i] = "ufat";
       }

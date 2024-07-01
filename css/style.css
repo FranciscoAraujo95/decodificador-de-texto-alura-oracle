@@ -95,8 +95,10 @@ textarea {
 
 .texto__codificado {
     color: var(--cor-destaque);
-    font-size: 2rem;
     font-family: var(--fonte-padrao);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: left;
 }
 
 .entrada__dados {
