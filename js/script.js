@@ -18,6 +18,7 @@ botaoCodificar.addEventListener("click", () => {
     //Se não
   } else {
     for (let i = 0; i < arrayDoTextoInformado.length; i++) {
+      //Essa verificação leva em conta se a vogal é minúscula ou maiúscula
       if (arrayDoTextoInformado[i] == "a" || arrayDoTextoInformado[i] == "A") {
         arrayDoTextoInformado[i] = "ai";
       } else if (
