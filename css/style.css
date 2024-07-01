@@ -199,6 +199,11 @@ textarea {
     bottom: 2rem;
 }
 
+.saida__dados__copiar.active2 {
+    font-weight: bold;
+    transition: .3s;
+}
+
 /* --------------------- MEDIA QUERIES ----------------------- */
 @media (max-width: 1440px) {
     .container {

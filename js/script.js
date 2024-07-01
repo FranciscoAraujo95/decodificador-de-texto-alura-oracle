@@ -42,6 +42,8 @@ botaoCodificar.addEventListener("click", () => {
       ) {
         arrayDoTextoInformado[i] = "ufat";
       }
+      saidaDadosCopiar.innerHTML = "Copiar";
+      inputDoUsuario.value = "";
     }
   }
   //Se tiver algo no input, faz tudo isso que tá embaixo, caso contrário, não faz nada
@@ -49,7 +51,6 @@ botaoCodificar.addEventListener("click", () => {
     textoCodificado.innerHTML = arrayDoTextoInformado.join("");
     limparSaidaDeDados();
     saidaDadosCopiar.classList.add("active");
-    inputDoUsuario.value = "";
   }
 });
 
@@ -77,7 +78,9 @@ botaoDecodificar.addEventListener("click", () => {
       .replaceAll("ober", "o")
       .replaceAll("ufat", "u");
     textoCodificado.innerHTML = textoDecodificado;
+    inputDoUsuario.value = "";
   }
+  saidaDadosCopiar.innerHTML = "Copiar";
 });
 
 //Essa função utiliza-se da API do clipboard pra conseguir copiar o texto que vai aparecer codificado no output
@@ -86,6 +89,13 @@ saidaDadosCopiar.addEventListener("click", () => {
   //Mostra copied! no console
   console.log("copied!");
 });
+
+const botaoCopiar = document
+  .querySelector("#botao__copiar")
+  .addEventListener("click", () => {
+    saidaDadosCopiar.classList.add("active2");
+    saidaDadosCopiar.innerHTML = "Copiado!!";
+  });
 
 //Recarrega a página
 let aluraLogoImagem = document
