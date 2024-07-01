@@ -101,6 +101,7 @@ function limparSaidaDeDados() {
 
 //Função pra decodificar o texto
 botaoDecodificar.addEventListener("click", () => {
+  limparSaidaDeDados();
   //A variavel textoInformado vai armazenar o input do usuario
   let textoInformado = inputDoUsuario.value;
   //Se o input estiver vazio
