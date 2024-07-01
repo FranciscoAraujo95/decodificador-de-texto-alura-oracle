@@ -18,15 +18,27 @@ botaoCodificar.addEventListener("click", () => {
     //Se não
   } else {
     for (let i = 0; i < arrayDoTextoInformado.length; i++) {
-      if (arrayDoTextoInformado[i] == "a") {
+      if (arrayDoTextoInformado[i] == "a" || arrayDoTextoInformado[i] == "A") {
         arrayDoTextoInformado[i] = "ai";
-      } else if (arrayDoTextoInformado[i] == "e") {
+      } else if (
+        arrayDoTextoInformado[i] == "e" ||
+        arrayDoTextoInformado[i] == "E"
+      ) {
         arrayDoTextoInformado[i] = "enter";
-      } else if (arrayDoTextoInformado[i] == "i") {
+      } else if (
+        arrayDoTextoInformado[i] == "i" ||
+        arrayDoTextoInformado[i] == "I"
+      ) {
         arrayDoTextoInformado[i] = "imes";
-      } else if (arrayDoTextoInformado[i] == "o") {
+      } else if (
+        arrayDoTextoInformado[i] == "o" ||
+        arrayDoTextoInformado[i] == "O"
+      ) {
         arrayDoTextoInformado[i] = "ober";
-      } else if (arrayDoTextoInformado[i] == "u") {
+      } else if (
+        arrayDoTextoInformado[i] == "u" ||
+        arrayDoTextoInformado[i] == "U"
+      ) {
         arrayDoTextoInformado[i] = "ufat";
       }
     }
