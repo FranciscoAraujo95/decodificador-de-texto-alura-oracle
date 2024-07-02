@@ -315,6 +315,10 @@ textarea {
         justify-content: space-around;
     }
 
+    .entrada__dados__info {
+        gap: 4px;
+    }
+
     .entrada__dados__info span {
         font-size: 14px;
     }
