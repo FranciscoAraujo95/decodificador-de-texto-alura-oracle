@@ -2,6 +2,7 @@
 
 <h2>📃 Sobre</h2>
 <p>Projeto desenvolvido durante a orimeira fase do programa Oracle Next Education, oferecido pela Oracle em parceria com a Alura!</p>
+<p>Um codificador de texto!! Ele aplica novas sequências de caracteres às vogais passadas no input e retorna um texto todo criptografado. Nele temos tanto a opção de criptografar o texto, quanto de descriptografar, e ainda um botão para copiar os outputs e facilitar a vida do usuário!!</p>
 
 ## 🚀 Tecnologias
 <div>
