@@ -206,6 +206,24 @@ textarea {
     transition: .3s;
 }
 
+.footer {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.footer__texto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-destaque);
+}
+
+.footer span {
+    font-weight: bold;
+}
+
 /* --------------------- MEDIA QUERIES ----------------------- */
 @media (max-width: 1440px) {
     .container {
