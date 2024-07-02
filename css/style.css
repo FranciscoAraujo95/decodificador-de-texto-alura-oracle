@@ -212,7 +212,7 @@ textarea {
     text-align: center;
     padding: 2rem;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .footer__texto {
@@ -272,6 +272,10 @@ textarea {
         margin-top: 2rem;
         display: block;
         position: static;
+    }
+
+    .footer {
+        margin-top: 2rem;
     }
 }
 
@@ -379,5 +383,9 @@ textarea {
     .btn {
         font-size: 1rem;
         width: 100%;
+    }
+
+    .footer {
+        margin-top: 1rem;
     }
 }
