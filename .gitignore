@@ -1,0 +1,7 @@
+# utilizado para ignorar arquivos que não queremos que sejam enviados ao github via git
+# exemplos
+# pasta -> temp/
+# arquivos -> teste.txt
+# Pra facilitar, temos o site gitignore.io, que já nos gera um gitignore baseado na tecnologia escolhida.
+
+logs.txt
