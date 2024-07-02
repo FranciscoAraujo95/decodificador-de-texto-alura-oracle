@@ -16,11 +16,12 @@
 
 body {
     box-sizing: border-box;
+    transition: .3s;
     height: 100vh;
     display: grid;
     place-items: center;
     background-color: var(--cor-secundaria);
-    transition: .3s;
+    padding-top: 4rem;
 }
 
 body.active__cafe {
@@ -169,7 +170,7 @@ textarea {
     box-shadow: .5px .5px 10px rgba(0, 0, 0, .1);
     display: grid;
     place-items: center;
-    overflow: hidden;
+    overflow-y: scroll;
     position: relative;
     word-break: break-word;
 }
@@ -235,6 +236,7 @@ textarea {
 @media (max-width: 1024px) {
     body {
         width: 70vw;
+        padding-top: 0;
     }
     
     .container {
@@ -281,6 +283,9 @@ textarea {
 
 
 @media (max-width: 768px) {
+    body {
+        padding-top: 0;
+    }
 
     .container {
         grid-template-columns: 1fr;
@@ -308,7 +313,9 @@ textarea {
 }
 
 @media (max-width: 400px) {
-
+    body {
+        padding-top: 0;
+    }
     
     .container {
         width: 400px;
