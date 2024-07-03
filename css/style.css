@@ -491,6 +491,10 @@ body.active__forest {
         bottom: .6rem;
     }
 
+    #input::-webkit-scrollbar {
+        width: 8px;
+    }
+
     .texto__codificado.active::-webkit-scrollbar {
         width: 8px;
     }
