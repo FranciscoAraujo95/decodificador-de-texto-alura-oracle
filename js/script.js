@@ -4,6 +4,7 @@ let botaoCodificar = document.querySelector(".botao__criptografar");
 let botaoDecodificar = document.querySelector(".botao__descriptografar");
 let textoCodificado = document.querySelector(".texto__codificado");
 let saidaDadosCopiar = document.querySelector(".saida__dados__copiar");
+let saidaDados = document.querySelector(".saida__dados");
 
 //Função pra criptografar o texto
 botaoCodificar.addEventListener("click", () => {
@@ -86,6 +87,8 @@ botaoCodificar.addEventListener("click", () => {
   //Se tiver algo no input, faz tudo isso que tá embaixo, caso contrário, não faz nada
   if (textoInformado != "") {
     textoCodificado.innerHTML = arrayDoTextoInformado.join("");
+    textoCodificado.classList.add("active");
+    saidaDados.classList.add("active");
     limparSaidaDeDados();
     saidaDadosCopiar.classList.add("active");
   }
@@ -116,9 +119,9 @@ botaoDecodificar.addEventListener("click", () => {
       .replaceAll("ufat", "u");
     textoCodificado.innerHTML = textoDecodificado;
     inputDoUsuario.value = "";
+    saidaDadosCopiar.innerHTML = "Copiar";
+    limparSaidaDeDados();
   }
-  saidaDadosCopiar.innerHTML = "Copiar";
-  limparSaidaDeDados();
 });
 
 //Essa função utiliza-se da API do clipboard pra conseguir copiar o texto que vai aparecer codificado no output
