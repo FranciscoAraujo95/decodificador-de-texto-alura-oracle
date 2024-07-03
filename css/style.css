@@ -274,7 +274,9 @@ body.active__forest {
     color: var(--cor-destaque);
 }
 
-.footer span {
+.footer a {
+    text-decoration: none;
+    color: var(--cor-destaque);
     font-weight: bold;
 }
 
