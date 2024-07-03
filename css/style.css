@@ -472,6 +472,10 @@ body.active__forest {
         gap: 0;
     }
 
+    .saida__dados__info {
+        padding: 0 0 1.2rem 0;
+    }
+
     .saida__dados__imagem {
         display: none;
     }
