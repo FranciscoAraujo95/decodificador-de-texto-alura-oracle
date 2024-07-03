@@ -218,10 +218,14 @@ body.active__forest {
     box-shadow: .5px .5px 10px rgba(0, 0, 0, .1);
     display: grid;
     place-items: center;
-    align-content: space-between;
+    align-content: center;
     overflow-y: hidden;
     position: relative;
     word-break: break-word;
+}
+
+.saida__dados.active {
+    align-content: space-between;
 }
 
 .saida__dados__container {
