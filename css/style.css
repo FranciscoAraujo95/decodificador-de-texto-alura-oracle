@@ -7,6 +7,7 @@
     --cor-cinza-escuro: #343A40; 
     --cor-cinza-medio: #495057;
     --cor-grab-scrollbar: #12335c;
+    --cor-active-botao-copiar: #fff;
     --fonte-padrao: "Segoe UI";
 }
 
@@ -16,6 +17,7 @@
 }
 
 body {
+    font-family: var(--fonte-padrao);
     box-sizing: border-box;
     transition: .3s;
     height: 100vh;
@@ -40,6 +42,7 @@ body.active__forest {
     --cor-destaque: #4F6F52;
     --cor-cinza-medio: #4F6F52;
     --cor-grab-scrollbar: #315534;
+
     transition: .5s;
 }
 
@@ -247,6 +250,7 @@ body.active__forest {
 
 .saida__dados__copiar {
     display: none;
+    transition: .3s;
 }
 
 .saida__dados__copiar.active {
@@ -258,6 +262,8 @@ body.active__forest {
 .saida__dados__copiar.active2 {
     font-weight: bold;
     transition: .3s;
+    background-color: var(--cor-destaque);
+    color: var(--cor-active-botao-copiar);
 }
 
 .footer {

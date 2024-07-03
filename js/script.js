@@ -8,6 +8,7 @@ let saidaDados = document.querySelector(".saida__dados");
 
 //Função pra criptografar o texto
 botaoCodificar.addEventListener("click", () => {
+  saidaDadosCopiar.classList.remove("active2");
   //Armazena o input do usuario na variavel textoInformado
   let textoInformado = inputDoUsuario.value;
   //Transforma o input do usuario em um array de caracteres, para que assim possamos passar por todo o array, verificando cada letra e a substituindo, caso seja a letra correta
@@ -120,6 +121,7 @@ botaoDecodificar.addEventListener("click", () => {
     textoCodificado.innerHTML = textoDecodificado;
     inputDoUsuario.value = "";
     saidaDadosCopiar.innerHTML = "Copiar";
+    saidaDadosCopiar.classList.remove("active2");
     limparSaidaDeDados();
   }
 });
