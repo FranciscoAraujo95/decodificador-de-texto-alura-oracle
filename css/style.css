@@ -27,6 +27,11 @@ body {
   padding-top: 4rem;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .active__cafe {
   --cor-primaria: #2c3639;
   --cor-secundaria: #384447ef;
@@ -133,6 +138,7 @@ body {
   display: grid;
   place-items: center;
   padding: 0.5rem;
+  animation: slideSide 0.5s forwards;
 }
 
 .texto__codificado.active::-webkit-scrollbar {
@@ -228,6 +234,17 @@ body {
 
 .saida__dados.active {
   align-content: space-between;
+}
+
+@keyframes slideSide {
+  from {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .saida__dados__container {

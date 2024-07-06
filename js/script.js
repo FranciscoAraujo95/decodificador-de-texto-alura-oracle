@@ -196,34 +196,3 @@ let iconeFloresta = document
 
     document.body.classList.add("active__forest");
   });
-
-//Função de codicicação, primeiro fiz ela da forma que está abaixo, depois adaptei aos botões do site
-// function codificarTexto(texto) {
-//   let mensagem = texto.split("");
-//   for (let i = 0; i < mensagem.length; i++) {
-//     if (mensagem[i] == "a") {
-//       mensagem[i] = "ai";
-//     } else if (mensagem[i] == "e") {
-//       mensagem[i] = "enter";
-//     } else if (mensagem[i] == "i") {
-//       mensagem[i] = "imes";
-//     } else if (mensagem[i] == "o") {
-//       mensagem[i] = "ober";
-//     } else if (mensagem[i] == "u") {
-//       mensagem[i] = "ufat";
-//     }
-//   }
-//   console.log(mensagem.join(""));
-// }
-
-//Função de decodicicação, primeiro fiz ela da forma que está abaixo, depois adaptei aos botões do site
-// function decodificarTexto(texto) {
-//   console.log(
-//     texto
-//       .replaceAll("ai", "a")
-//       .replaceAll("enter", "e")
-//       .replaceAll("imes", "i")
-//       .replaceAll("ober", "o")
-//       .replaceAll("ufat", "u")
-//   );
-// }
