@@ -4,6 +4,8 @@
 <p>Projeto desenvolvido durante a primeira fase do programa Oracle Next Education, oferecido pela Oracle em parceria com a Alura!</p>
 <p>Um codificador de texto!! Ele aplica novas sequências de caracteres às vogais passadas no input e retorna um texto todo criptografado. Nele temos tanto a opção de criptografar o texto, quanto de descriptografar, e ainda um botão para copiar os outputs e facilitar a vida do usuário!!</p>
 
+<br>
+
 ## 🚀 Tecnologias
 
 <div>
@@ -12,8 +14,12 @@
   <img alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </div>
 
+<br>
+
 <h2>🏗 Estrutura e Estilo 📿</h2>
 <p>A estrutura e estilos do projeto foram feitos baseando-se no exemplo disponibilizado no figma, devo ter usado somente algumas poucas medidas diferentes por achar mais agradáveis. E também aproveitei pra aplicar um estilinho próprio, vocês vão reparar que na primeira coluna existem três botões, apertando-os, será aplicado um tema de cor diferente à toda a aplicação. Tente você mesmo e use o que mais lhe agradar. 😁</p>
+
+<br>
 
 <h2>🎨 Themes</h2>
 <p>Abaixo são prints das telas da aplicação e os temas disponíveis.</p>
