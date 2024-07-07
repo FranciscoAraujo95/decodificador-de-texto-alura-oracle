@@ -56,6 +56,6 @@
 
 <br>
 <h2>👨‍💻 Autor do projeto</h2>
-<p class="title" >Francisco Araujo, desenvolvedor Java ☕</p>
+<h3 class="title" >Francisco Araujo, desenvolvedor Java ☕</h3>
 <p>Cearense, apaixonado por tecnlogia e tudo o que a envolve. </p>
 <img class="perfil" src="./assets/pf.png" alt="Foto de perfil do autor do projeto" width="300"/>
