@@ -95,14 +95,6 @@ botaoCodificar.addEventListener("click", () => {
   }
 });
 
-//Essa função retira parte dos elementos no container de saída de dados, pra ficar um output mais limpo
-function limparSaidaDeDados() {
-  let saidaDadosImagem = document
-    .querySelector(".saida__dados__imagem")
-    .remove();
-  let saidaDadosInfo = document.querySelector(".saida__dados__info").remove();
-}
-
 //Função pra decodificar o texto
 botaoDecodificar.addEventListener("click", () => {
   //A variavel textoInformado vai armazenar o input do usuario
@@ -126,6 +118,14 @@ botaoDecodificar.addEventListener("click", () => {
   }
 });
 
+//Essa função retira parte dos elementos no container de saída de dados, pra ficar um output mais limpo
+function limparSaidaDeDados() {
+  let saidaDadosImagem = document
+    .querySelector(".saida__dados__imagem")
+    .remove();
+  let saidaDadosInfo = document.querySelector(".saida__dados__info").remove();
+}
+
 //Essa função utiliza-se da API do clipboard pra conseguir copiar o texto que vai aparecer codificado no output
 saidaDadosCopiar.addEventListener("click", () => {
   navigator.clipboard.writeText(textoCodificado.innerHTML);
@@ -138,6 +138,8 @@ const botaoCopiar = document
   .addEventListener("click", () => {
     saidaDadosCopiar.classList.add("active2");
     saidaDadosCopiar.innerHTML = "Copiado!!";
+    textoCodificado.innerText =
+      "Mensagem copiada! Cole acima para descriptografar!";
   });
 
 //Recarrega a página
@@ -188,7 +190,7 @@ let iconeFloresta = document
     let iconeAlura = document
       .querySelector(".alura__logo__imagem")
       .setAttribute("src", "./assets/alura-logo-forest.svg");
-    document.body.classList.add("active__cafe");
+    document.body.classList.add("active__forest");
 
     let personagemComLupa = document
       .querySelector(".saida__dados__imagem")
