@@ -138,8 +138,14 @@ const botaoCopiar = document
   .addEventListener("click", () => {
     saidaDadosCopiar.classList.add("active2");
     saidaDadosCopiar.innerHTML = "Copiado!!";
-    textoCodificado.innerText =
-      "Mensagem copiada! Cole acima para descriptografar!";
+    const larguraTela = window.innerWidth;
+    if (larguraTela < 1024) {
+      textoCodificado.innerText =
+        "Mensagem copiada! Cole acima e clique no botão para descriptografar!";
+    } else {
+      textoCodificado.innerText =
+        "Mensagem copiada! Cole ao lado e clique no botão para descriptografar!";
+    }
   });
 
 //Recarrega a página
