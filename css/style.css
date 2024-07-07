@@ -106,8 +106,13 @@ img {
 }
 
 #input::-webkit-scrollbar {
-  width: 15px;
-  /* height: 20px; */
+  width: 8px;
+  transition: 0.5s;
+}
+
+#input:hover::-webkit-scrollbar {
+  width: 12px;
+  transition: 0.5s;
 }
 
 #input::-webkit-scrollbar-thumb {
@@ -142,8 +147,13 @@ img {
 }
 
 .texto__codificado.active::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
   /* height: 20px; */
+}
+
+.texto__codificado.active:hover::-webkit-scrollbar {
+  width: 12px;
+  transition-duration: 0.5s;
 }
 
 .texto__codificado.active::-webkit-scrollbar-thumb {
@@ -329,11 +339,15 @@ img {
     padding-top: 0;
   }
 
+  main {
+    padding: 2rem;
+  }
+
   .container {
     grid-template-columns: 1fr;
     gap: 1rem;
     height: 100%;
-    width: 100vw;
+    width: 94vw;
   }
 
   .primeira__coluna {
@@ -374,12 +388,18 @@ img {
 @media (max-width: 768px) {
   body {
     padding-top: 0;
+    width: 100%;
+  }
+
+  main {
+    padding: 1;
   }
 
   .container {
     grid-template-columns: 1fr;
     height: 100%;
-    border-radius: 0;
+    width: 100%;
+    border-radius: 2rem;
   }
 
   .primeira__coluna {
@@ -425,11 +445,16 @@ img {
     padding-top: 0;
   }
 
+  main {
+    padding: 0;
+  }
+
   .container {
     width: 400px;
     max-width: 100%;
     grid-template-columns: 1fr;
     padding: 0.8rem;
+    border-radius: 0;
   }
 
   .primeira__coluna {
