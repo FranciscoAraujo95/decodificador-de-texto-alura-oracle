@@ -39,30 +39,18 @@
 <h2>📱 Responsividade</h2>
 <p>Tablet (abaixo de 1024px), telas menores (abaixo de 768px), e como fica no smartphone (abaixo de 400px), respectivamente.</p>
 
-<img src="https://github.com/FranciscoAraujo95/decodificador-de-texto-alura-oracle/assets/89553117/1d5c61e2-3c35-4237-ae23-b7385810567b" alt="Aplicação na tela de um tablet" width="310"/>
-<img src="https://github.com/FranciscoAraujo95/decodificador-de-texto-alura-oracle/assets/89553117/dd522139-6962-4f9d-ab03-0f823d6e22e5" alt="Aplicação em telas menores" width="290"/>
-<img src="https://github.com/FranciscoAraujo95/decodificador-de-texto-alura-oracle/assets/89553117/2c6e2a0b-f919-450c-a9d5-08add85debdb" alt="Aplicação em telas de smartphone" width="260"/>
+<img src="https://github.com/FranciscoAraujo95/decodificador-de-texto-alura-oracle/assets/89553117/1d5c61e2-3c35-4237-ae23-b7385810567b" alt="Aplicação na tela de um tablet" width="260"/>
+<img src="https://github.com/FranciscoAraujo95/decodificador-de-texto-alura-oracle/assets/89553117/dd522139-6962-4f9d-ab03-0f823d6e22e5" alt="Aplicação em telas menores" width="250"/>
+<img src="https://github.com/FranciscoAraujo95/decodificador-de-texto-alura-oracle/assets/89553117/2c6e2a0b-f919-450c-a9d5-08add85debdb" alt="Aplicação em telas de smartphone" width="210"/>
 
 <br>
 <h2>🔗 Link para o projeto</h2>
 <p><a href="https://decodificador-de-texto-alura-oracle-francisco-araujo.vercel.app/" target="self">Decodificador de Textos</a></p>
 <p>O link acima o levará diretamente ao site da aplicação. O deploy foi feito pelo Vercel. Fique à vontade para utilizar, brincar, baixar o repositório e modificar o código como desejar.</p>
 
-<style>
-  .perfil {
-    border-radius: 50%;
-    border: 2px solid #00aa00;
-    box-shadow: 2px 2px 0px rgba(0,0,0, .3);
-  }
-
-  .title {
-    font-size: 1.8rem;
-  }
-</style>
-
 <br>
 <h2>👨‍💻 Autor do projeto</h2>
 
 <p class="title" >Francisco Araujo, desenvolvedor Java ☕</p>
 <p>Cearense, apaixonado por tecnlogia e tudo o que a envolve. </p>
-<img class="perfil" src="./assets/pf.jpg" alt="Foto de perfil do autor do projeto" width="300"/>
+<img class="perfil" src="./assets/pf.png" alt="Foto de perfil do autor do projeto" width="300"/>
