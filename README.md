@@ -50,6 +50,7 @@
 <img src="https://github.com/FranciscoAraujo95/decodificador-de-texto-alura-oracle/assets/89553117/2c6e2a0b-f919-450c-a9d5-08add85debdb" alt="Aplicação em telas de smartphone" width="210"/>
 
 <br>
+<br>
 <h2>🔗 Link para o projeto</h2>
 <p><a href="https://decodificador-de-texto-alura-oracle-francisco-araujo.vercel.app/" target="self">Decodificador de Textos</a></p>
 <p>O link acima o levará diretamente ao site da aplicação. O deploy foi feito pelo Vercel. Fique à vontade para utilizar, brincar, baixar o repositório e modificar o código como desejar.</p>
@@ -57,5 +58,5 @@
 <br>
 <h2>👨‍💻 Autor do projeto</h2>
 <h3 class="title" >Francisco Araujo, desenvolvedor Java ☕</h3>
-<p>Cearense, apaixonado por tecnlogia e tudo o que a envolve. </p>
+<p>Cearense, apaixonado por tecnlogia e tudo o que a envolve. 🌴 </p>
 <img class="perfil" src="./assets/foto-perfil.png" alt="Foto de perfil do autor do projeto" width="300"/>
